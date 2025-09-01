@@ -63,7 +63,20 @@ Primitives enable you to perform fundamental data operations.
 4. Check your work, as you go, by opening the browser console with the **Inspect Element** tool.
 
 ```javascript
-// Write your code in here
+let hello = "DND!"
+let critSuccess = 20
+let truth = true
+let deceive = false
+null
+let x
+console.log(x) //Output: undefined
+let rollforInitiative = {
+  great: "Yes!",
+  bad: "No!",
+}
+rollforInitiative.excited = "LetsDoThis!"
+console.log(rollforInitiative['excited'])
+console.log(rollforInitiative.excited)
 ```
 
 ## Submission
