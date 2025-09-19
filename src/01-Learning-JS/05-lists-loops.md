@@ -393,11 +393,11 @@ professions
 For this first exercise, I'll provide you with the basic structure:
 
 ```js
-let lessProfessions = ["scientist", "teacher", "journalist"]
-for (const ) {
-  if () {
-    // Do something in here
+let lessProfessions = ["scientist", "laborer", "journalist"]
+for (const profession of lessProfessions) {
+  if (profession = "laborer") {
   }
+  console.log(profession)
 }
 ```
 
@@ -405,8 +405,8 @@ for (const ) {
   Interactive output of the array of <code>lessProfessions</code>
 </p>
 
-```javascript
-// Convert me to output `lessProfessions`
+```js
+console.log(lessProfessions)
 lessProfessions
 ```
 
@@ -414,16 +414,19 @@ lessProfessions
 
 **Goal**: Add a new profession as a String, `"spinster"`, to your `professions` list, then log it to the web console.
 
-```javascript
-// Convert and code here
+```js
+let professions=["scientist", "laborer", "journalist"]{
+  console.log(professions.push("spinster"))
+}
+
 ```
 
 <p class="codeblock-caption">
   Interactive output of the array of <code>lessProfessions</code>
 </p>
 
-```javascript
-// Convert me to output `professions`
+```js
+console.log(professions)
 professions
 ```
 
