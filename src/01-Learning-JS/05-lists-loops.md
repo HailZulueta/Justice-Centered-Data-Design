@@ -395,7 +395,7 @@ For this first exercise, I'll provide you with the basic structure:
 ```js
 let lessProfessions = ["scientist", "laborer", "journalist"]
 for (const profession of lessProfessions) {
-  if (profession = "laborer") {
+  if (profession === "laborer") {
   }
   console.log(profession)
 }
@@ -415,10 +415,10 @@ lessProfessions
 **Goal**: Add a new profession as a String, `"spinster"`, to your `professions` list, then log it to the web console.
 
 ```js
-let professions=["scientist", "laborer", "journalist"]{
-  console.log(professions.push("spinster"))
-}
+let professions=["scientist", "laborer", "journalist"]
 
+console.log(professions.push("spinster"))
+console.log(professions)
 ```
 
 <p class="codeblock-caption">
@@ -435,15 +435,29 @@ professions
 **Goal**: Make a `for` loop that considers each item in the `professions` array and logs "Person's profession is ___", which "___" should be the profession from the array.
 
 ```javascript
-// Convert and code here
+let professions = ["scientist", "laborer", "journalist", "spinster"]
+  for (const profession of professions){
+    console.log("Person's profession is" + profession)
+  }
+
 ```
 
 ### E4. More conditional pushing with `for...of`
 
 **Goal**: Create a new array and populate, i.e., push all items from the `childStatus` array, except for any empty Strings. Use a `for...of` loop to do so.
 
-```javascript
-// Your code here
+```js
+let childStatus = ["son", "", "daughter", "", "orphan"]
+
+let newChildStatus = []
+
+for (const status of childStatus) {
+  if (status !== "") {
+    newChildStatus.push(status)
+  }
+}
+
+console.log(newChildStatus)
 ```
 
 ### E5. Conditional logging
