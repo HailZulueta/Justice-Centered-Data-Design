@@ -447,6 +447,7 @@ let professions = ["scientist", "laborer", "journalist", "spinster"]
 **Goal**: Create a new array and populate, i.e., push all items from the `childStatus` array, except for any empty Strings. Use a `for...of` loop to do so.
 
 ```js
+// "" will equal no child ok hail
 let childStatus = ["son", "", "daughter", "", "orphan"]
 
 let newChildStatus = []
@@ -456,16 +457,31 @@ for (const status of childStatus) {
     newChildStatus.push(status)
   }
 }
-
 console.log(newChildStatus)
+```
+
+```js
+newChildStatus
 ```
 
 ### E5. Conditional logging
 
 **Goal**: Make a `for` loop that considers each item in the `childStatus` list. Log `"Person has child"` ***if*** the person has a child ***and*** `"Person does not have child"` ***if not***. Use `.length` in your conditional statement to enact this logging.
 
-```javascript
-// Your code here
+```js
+let ThechildStatus = ["son", "", "daughter", "", "orphan"]
+
+for (const status of ThechildStatus) {
+  if (status.length > 0) {
+    console.log("Person has child")
+  } else {
+    console.log("Person does not have child")
+  }
+}
+```
+
+```js
+ThechildStatus
 ```
 
 Make sure you check to see if the correct language has been logged to the web console.
@@ -476,11 +492,16 @@ Make sure you check to see if the correct language has been logged to the web co
 
 For your reference, here's the original declaration and instantiation of `sex`: `let sex = ["f", "m", "f", "m", "i"]`.
 
-```javascript
-// Convert and code here
+```js
+// was... was it not already defined? OK IT WAS NVM
+// Add "unknown" to the list
+sex.push("unknown")
+
+// Output the whole list to the page/console
+console.log(sex)
 ```
 
-```javascript
+```js
 // Convert and output here
 sex
 ```
@@ -490,7 +511,22 @@ sex
 **Goal**: Make a `for` loop that considers each item in the `sex` list. Log "Person is male" ***if*** the person is `"m"`, "Person is female" ***if*** the person is `"f"`, "Person is intersex" ***if*** the person is `"i"`, and "Person's sex is not known" ***if*** `"unknown"`.
 
 ```javascript
-// Your code here
+for (const sex of sexList) {
+  if (sex === "m") {
+    console.log("Person is male")
+  } else if (sex === "f") {
+    console.log("Person is female")
+  } else if (sex === "i") {
+    console.log("Person is intersex")
+  } else if (sex === "unknown") {
+    console.log("Person's sex is not known")
+  }
+}
+
+```
+
+```js
+sex
 ```
 
 Make sure to check if the items are logged correctly.
@@ -505,12 +541,20 @@ Since this is your first big use of `.map()`, I'll give you the skeleton of the 
 // Skeleton of .map()
 let sexFullTerm = sex.map(
   (sexItem) => {
-    // Enter your code in here,
-    // which will include conditional statements.
-    // Also, be sure to use `return` statements
-    // where appropriate!
+    if (sexItem === "f"){
+      return "female"
+    } else if(sexItem === "m"){
+      return "male"
+    } else if (sexItem === "i"){
+      return "intersex"
+    }
+    //god plseae work
   }
 )
+```
+
+```js
+sex
 ```
 
 ## Submission
