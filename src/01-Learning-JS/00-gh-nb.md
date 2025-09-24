@@ -135,6 +135,6 @@ Techniques learned and practiced include:
 
 ## Submission
 
-re-do submission
+re-do submit!
 
 Submit the PR link in Moodle, when you're ready.
