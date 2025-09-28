@@ -64,7 +64,7 @@ In this project, check out the `/src/data/events.json` file, which is a small ex
   What other properties of JSON do you notice?
 </p>
 
-**RESPONSE**: Write your response here.
+**RESPONSE**: It looks like JSON uses a lot of quotation marks, squiggly brackets and colons more
 
 ## 1.8.2 Framework's FileAttachment()
 
@@ -221,6 +221,12 @@ Goal: Demonstrate your understanding of the CSV file format by creating a mini C
 Use the empty codeblock below.
 
 ```
+Slang,Meaning,Connotation
+Cunt,Something is nice looking,Good
+Diva,Noun for someone who serves,Good
+Fierce,Something looks bold,Good
+Chopped,Unpleasant or unfinished,Bad
+Slay Boots,Something eats down or looks amazing,Good
 ```
 
 ### E2. Load a CSV file
