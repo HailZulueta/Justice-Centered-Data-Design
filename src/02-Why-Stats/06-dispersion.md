@@ -3,7 +3,7 @@
 ```js
 import {utcParse,utcFormat} from "d3-time-format";
 import {standardDeviation, sampleSkewness, sampleKurtosis, ckmeans, variance} from 'npm:simple-statistics';
-import {getUniquePropListBy,oneLevelRollUpFlatMap,twoLevelRollUpFlatMap,threeLevelRollUpFlatMap,mapDateObject,sumUpWithReducerTests, reduceRejectedBallots} from "./utils-tc/utils.js"
+import {getUniquePropListBy,oneLevelRollUpFlatMap,twoLevelRollUpFlatMap,threeLevelRollUpFlatMap,mapDateObject,sumUpWithReducerTests, reduceRejectedBallots} from "./utils/utils.js"
 ```
 
 How can we use our knowledge of central tendency, i.e., estimates of location, to ask questions about the data? In other words, how can we begin to define "normal" patterns across interested features, such as ballot requests status and race over time, so we can also judge what values of those features are not normal? And, is the central tendency of the data acceptable for the phenomena in question: mail-in ballot voting in North Carolina?
@@ -118,6 +118,11 @@ Plot.plot({
   ]
 })
 ```
+- Filter for 1-2 groups only?
+- How to make sure outliers are more visible?
+  - Tooltips?
+- What are some reasons for this high frequency of rejections across all groups?
+  - Isolate which types of rejections were possibly higher issues than others?
 
 **Variance of rejected ballots**: <strong>${(variance(rejPercentages))}</strong>
 - ***Variance*** helps determine the data's spread size when compared to the ***mean*** value.

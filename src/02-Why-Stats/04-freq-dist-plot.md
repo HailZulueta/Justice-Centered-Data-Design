@@ -2,7 +2,8 @@
 
 ```js
 import {utcParse, utcFormat} from "d3-time-format";
-// Import your functions
+import {} from "./utils/utils.js"
+import {oneLevelRollUpFlatMap, twoLvelRollUpFlatMap, threeLevelRollUpFlatMap, mapDateObject, GetUniquePropListBy} from "./utils-tc/utils.js"
 
 ```
 
@@ -127,8 +128,12 @@ Again, we are going to continue working with the 2024 NC absentee voter CSV file
 2. Assign the data to a variable named `ncVotersAll`.
 3. Render it to the page in a separate codeblock.
 
-```javascript
-// FileAttachment() code here.
+```js
+plot.plot({
+  marks:[
+
+  ]
+})
 ```
 
 <p class="codeblock-caption">
@@ -145,21 +150,15 @@ ncVotersAll
 Let's use our helpful `mapDateObject()` function in the `utils.js` file, so we can easily create Date() objects and new date fields, such as week numbers.
 
 <!-- Create date objects and new date props -->
-```javascript
-/**
- * Use the mapDateObject() function below
- * and assign the returned data to a new
- * constant called `ncUpdates`
-**/
-
+```js
+const ncUpdates = mapDateObject(ncVotersAll, "ballot_req_dt")
 ```
 
 <p class="codeblock-caption">
   Interactive output of full data set.
 </p>
 
-```javascript
-// Convert if you want to print the data to the page
+```js
 ncUpdates
 ```
 
@@ -178,18 +177,17 @@ Alright, let's use our custom utility functions to create some data to plot. Con
     <p class="note">We're also going to sort this data after we roll it up and flatten it.</p>
 
 <!-- Use the custom functions here -->
-```javascript
-// Convert and create the data described above
-
+```js
+const afByRace = oneLevelRollUpFlatMap(ncUpdates, "race", "af")
+const afByWeekAndRace = twoLevelRollUpFlatMap(ncUpdates, "ballot_req_dt_week", "race", "af")
 ```
 
 <p class="codeblock-caption">
   Feel free to use the codeblock below to check your outputs.
 </p>
 
-```javascript
-// Convert check outputs: afByRace & afByWeekAndRace
-
+```js
+afByWeekAndRace
 ```
 
 ## E4. Sort *afByWeekAndRace* with *.sort()*
@@ -269,14 +267,29 @@ const afByWeekAndRaceSorted = afByWeekAndRace.sort(
 
 I've supplied you with the skeleton for this plot. Be sure to add the options noted in the directions above.
 
-```javascript
+```js
 Plot.plot({
-  // 1. Add comma-separated layout options
-
+  grid: true,
   marks: [
-    // 2. Add comma-separated marks options
+    Plot.ruleY([0]),
+    Plot.barY(
+      afByRace,
+      {
+        x: "race",
+        y: "af",
+        insetRight: 10,
+        insetLeft: 10,
+        sort: {x: "-y"},
+        tip: true, 
+      }
+    ),
+    Plot.axisX( { 
+    label: null,
+    lineWidth: 8,
+    marginBottom: 40,
+    })
 
-    // 3. Create your bar chart
+    // 3.
     Plot.barY()
   ]
 })
@@ -435,7 +448,9 @@ For this plot, we want to include all ballot requests and statuses -- except any
 
 Assign it to a constant variable named `ncMailBallots`.
 
-<!-- JS codeblock to attach nc_absentee_mail_2024_no_dropped_dupes.csv -->
+```js
+const ncMailBallots = nc_absentee_mail_2024_no_dropped_dupes.csv
+```
 
 
 ### 2. Map date objects to OG data
@@ -444,7 +459,15 @@ Map those Date objects and other week properties with your custom `mapDateObject
 
 Assign it to a constant variable named `ncMailBallotsUpdated`.
 
-<!-- JS codeblock to map date objects as ncMailBallotsUpdated-->
+```js
+const afByWeekRaceStatus = threeLevelRollUpFlatMap(
+  ncMailBallotsUpdated,
+  "ballot_req_dt_week",
+  "race",
+  "ballot_rtn_status",
+  "af"
+)
+```
 
 
 Output `ncMailBallotsUpdated` below:
