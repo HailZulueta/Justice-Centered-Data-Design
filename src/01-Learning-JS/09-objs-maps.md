@@ -402,7 +402,7 @@ let nc2024SampleVotersUpdate = [
 This voter data has lots of dates, which we learned how to process and change with parsers and formatters from D3.js/Observable. Let's In the codeblock below with a new version of the data assigned to the variable `nc2024SampleVotersUpdate`.
 
 <!-- Rendered for...of nc2024SampleVotersUpdate -->
-```javascript
+```js
 for (const voter of nc2024SampleVotersUpdate) {
   // Create a Date object from the String value
   let voterReqDate = parseDateSlash(voter.ballot_req_dt)
@@ -955,14 +955,21 @@ nc24VotersRollUpPartyAndRace.get("DEM").get("F") // Yields 4149
   Be sure to write your code in a manner aligned with how I break down the process above.
 </p>
 
-```javascript
-// Your code goes here
+```js
+let voterBallotStatus = nc2024SampleVoters.map((voter) => {
+  // Only include entries where ballot_rtn_status is NOT null
+  if (voter.ballot_rtn_status !== null) {
+    return {
+      ballot_rtn_status: voter.ballot_rtn_status,
+      race: voter.race
+    }
+  }
+})
 ```
 
-```javascript
-// Your new variable here
+```js
+voterBallotStatus
 ```
-
 ### E2. Group NC Voters By the Ballot Sent Date as an InternMap()
 
 **Goal**: Take the `nc2024SampleVoters` data and do the following:
