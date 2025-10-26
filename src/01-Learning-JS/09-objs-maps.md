@@ -957,7 +957,7 @@ nc24VotersRollUpPartyAndRace.get("DEM").get("F") // Yields 4149
 
 ```js
 let voterBallotStatus = nc2024SampleVoters.map((voter) => {
-  // Only include entries where ballot_rtn_status is NOT null
+
   if (voter.ballot_rtn_status !== null) {
     return {
       ballot_rtn_status: voter.ballot_rtn_status,
@@ -983,12 +983,24 @@ voterBallotStatus
   Be sure to write your code in a manner aligned with how I break down the process above.
 </p>
 
-```javascript
-// Your code goes here
+```js
+let parseDate = d3.utcParse("%m/%d/%Y")
+
+let votersWithSendDateObj = nc2024SampleVoters.map((voter) => {
+  return {
+    ...voter,
+    ballot_send_dt_obj: parseDate(voter.ballot_send_dt)
+  }
+})
+let groupedBySendDate = d3.group(
+  votersWithSendDateObj,
+  (voter) => voter.ballot_send_dt_obj
+)
+
 ```
 
-```javascript
-// Your grouped variable here
+```js
+groupedBySendDate
 ```
 
 ### E3. Group NC Voters By Age Range as an InternMap()
@@ -1008,11 +1020,11 @@ voterBallotStatus
 </div>
 
 ```javascript
-// Your code goes here
+// i skip this i think
 ```
 
 ```javascript
-// Your grouped variable here
+// i skip this... i think?
 ```
 
 ### E4. Group NC Voters by Your Desired set of 2-3 Fields as an InternMap()
@@ -1026,11 +1038,15 @@ First outline your procedure with steps below. Then, use the JS codeblock to per
 3. ...
 
 ```javascript
-// Your code goes here
+let groupedByRaceAndStatus = d3.group(
+  nc2024SampleVoters,
+  (voter) => voter.race,
+  (voter) => voter.ballot_rtn_status
+)
 ```
 
 ```javascript
-// Your grouped variable here
+groupedByRaceAndStatus
 ```
 
 ### E5. Rollup NC Voters by Total Ballot Sent Date as an InternMap()
@@ -1043,12 +1059,17 @@ First outline your procedure with steps below. Then, use the JS codeblock to per
 2. Enter step 2
 3. ...
 
-```javascript
-// Your code goes here
+```js
+const votersWithDate = nc2024SampleVoters.map(d => ({
+  ...d,
+  requestDate: new Date(d.ballotRequestDate)
+}));
+
 ```
 
-```javascript
-// Your grouped variable here
+```js
+  ballotsbyDate
+  //um...? i need help here highkey.
 ```
 
 ## Submission
