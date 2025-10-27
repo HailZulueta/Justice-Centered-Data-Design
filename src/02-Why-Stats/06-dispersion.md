@@ -158,7 +158,7 @@ Plot.plot({
         {y: "count"},
         {
           x: "percentage",
-          // fill: "race",
+          fill: "race",
           tip: true,
         },
       )
