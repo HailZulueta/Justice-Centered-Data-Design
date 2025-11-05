@@ -111,6 +111,7 @@ export default {
         // },
       ]
     },
+    
     // HELP PAGES
     {
       name: "Help",
@@ -150,16 +151,20 @@ export default {
         // },
       ]
     },
-    // {
-    //   name: "Textual Analysis",
-    //   open: false,
-    //   pages: [
-    //     {
-    //       name: "Compromise",
-    //       path: "/xx-Textual-Analysis/compromise"
-    //     },
-    //   ]
-    // },
+    {
+       name: "3. Textual Analysis",
+       open: false,
+       pages: [
+         {
+           name: "Weighting Words with TF-IDF",
+           path: "/03-Textual-Analysis/01-weighting-words",
+         },
+         {
+          name: "3.2 Processing Text",
+          path: "/03-Textual-Analysis/02-processing",
+},
+       ]
+    },
   ],
 
   // Content to add to the head of the page, e.g. for a favicon:
