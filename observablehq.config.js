@@ -163,7 +163,21 @@ export default {
         // },
       ]
     },
+<<<<<<< HEAD
     
+=======
+    // 4. GEO SPATIAL
+    {
+      name: "4. Geo-Spatial",
+      open: false,
+      pages: [
+        {
+          name: "4.1 Geo Data Basics",
+          path: "/04-Geo/01-geo-basics"
+        },
+      ]
+    },
+>>>>>>> 0122a166ab89692a4c836e4892c6e58ae0f69503
     // HELP PAGES
     {
       name: "Help",
