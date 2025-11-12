@@ -323,7 +323,6 @@ export const downloadAsCSV = (value, name = "data", label = "Save") => {
   b.textContent = label
   a.download = name
 
-  // 3. Reset the button, after each use.
   async function reset() {
     await new Promise(requestAnimationFrame);
     URL.revokeObjectURL(a.href)

@@ -204,9 +204,10 @@ export default {
            name: "4.1 Geobasics",
            path: "/04-Geo/01-geo-basics",
          },
-         {
+        {
           name: "4.2 Plotting geobasics",
           path: "/04-Geo/02-plot-geo",
+        }
        ]
     },
   ],
