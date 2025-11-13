@@ -168,8 +168,20 @@ export default {
           path: "/Help/markdown"
         },
         {
+          name: "For Loops",
+          path: "/Help/loops"
+        },
+        {
+          name: "Functions",
+          path: "/Help/functions"
+        },
+        {
           name: "Data Processing",
           path: "/Help/processing"
+        },
+        {
+          name: "Normalizing Values",
+          path: "/Help/normalizing"
         },
       ]
     },
