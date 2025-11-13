@@ -121,7 +121,7 @@ export const addDateFields = (data) => {
     view(downloadAsCSV(async () => {
       const csvFullString = d3.csvFormat(ENTER_ARR_OF_OBJS_HERE);
       return new Blob([csvFullString], { type: "text/csv" });
-    }, allFileTableName, "Save Full Data Set As CSV"));
+    }, "ENTER_STRING_DEFAULT_FILENAME_HERE.csv", "Save Full Data Set As CSV"));
     ```
  *
 **/
