@@ -129,8 +129,8 @@ vonnegut
 
 Let's start simple. Output the length of the String, `vonnegut`, in a `js` codeblock below.
 
-```javascript
-// Convert me to a js block
+```js
+vonnegut.length
 ```
 
 ### E2. Replace parts of a String
@@ -147,21 +147,30 @@ If you review the String, you will notice how there are section breaks represent
     </div>
 4. In the fourth codeblock, output the new variable, `vonnegutNoSBDQ`, to verify if it worked.
 
-```javascript
-// Convert me to a js block and complete #1
+```js
+let vonnegutNoSB = vonnegut.replaceAll("* * * * *", "")
+vonnegutNoSB
 ```
 
-```javascript
-// Convert me to a js block and complete #2
+```js
+vonnegutNoSB
 ```
 
-```javascript
-// Convert me to a js block and complete #3
+```js
+let vonnegutClean = vonnegutNoSB
+  .replaceAll("\"", "")
+  .replaceAll("'", "")
+  .replaceAll(",", "")
+  .replaceAll(".", "")
+  .replaceAll("?", "")
+  .replaceAll(";", "")
+  .replaceAll("--", " ")
+
+vonnegutClean
 ```
 
-```javascript
-// Convert me to output the grand finale!
-vonnegutNoSBDQ
+```js
+vonnegutClean
 ```
 
 ### E3. Same thing, but better method with a for loop
@@ -172,12 +181,22 @@ Ok, those chains were ridiculous, right? Below, complete the same outcome, but u
   Put those desired marks to replace in an Array. You will also need to write a conditional statement to handle the <code>--</code> differently.
 </p>
 
-```javascript
-// Convert me and use a for loop to remove all desired punctuation
+```js
+let vonnegutNoPuncs = vonnegutNoSB
+let punctuations = ["\"", "'", ",", ".", "?", ";", "--"]
+
+for (const mark of punctuations) {
+  if (mark === "--") {
+    vonnegutNoPuncs = vonnegutNoPuncs.replaceAll(mark, " ")
+  } else {
+    vonnegutNoPuncs = vonnegutNoPuncs.replaceAll(mark, "")
+  }
+}
+vonnegutNoPuncs
 ```
 
-```javascript
-// Convert me and output the new string, vonnegutNoPuncs, here
+```js
+vonnegutNoPuncs
 ```
 
 ### E4. Split the String into an Array of Strings
@@ -186,14 +205,13 @@ Sometimes, we need to isolate parts of a text for analysis by splitting it into 
 
 Create an array of strings of Vonnegut's story as a new variable called `vonnSplit`. Do so by splitting the newly cleaned String, `vonnegutNoPuncs`, with an empty single space (`" "`).
 
-```javascript
-// Convert me to a js block and complete the exercise
+```js
+let vonnSplit = vonnegutNoPuncs.split(" ")
 ```
 
-```javascript
-// Convert me to a js block and output `vonnSplit`
+```js
+vonnSplit
 ```
-
 ### E5. Create array of all hyphenated words
 
 Ok, last exercise! Complete the following steps to create a new array that only includes hyphenated words.
@@ -203,9 +221,23 @@ Ok, last exercise! Complete the following steps to create a new array that only 
 1. In a first codeblock, declare a new array called `hyphenatedWords`. Then, push only hyphenated words into it.
 2. In a second codeblock, output the new array to verify your work.
 
+```js
+let hyphenatedWords = []
+
+for (const word of vonnSplit) {
+  if (word.includes("-")) {
+    hyphenatedWords.push(word)
+  }
+}
+```
+
+```js
+hyphenatedWords
+```
+
 **Question**: What oddities do you notice about the outcome? Below, explain what you suggest is happenning, and what you would do to resolve the issue with isolating a better list of hyphenated words.
 
-ENTER_YOUR_RESPONSE_HERE
+To me, it looks like it kinda brings together words that aren't supposed to be hyphenated? For example-"trash-burner\r\n\r\nWell" looks SO odd. Im kind of blanking on how to do it, but perhaps specify the hyphenated words better to clean it?
 
 ## Submission
 

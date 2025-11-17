@@ -370,13 +370,17 @@ Here are some tips to consider as you complete this exercise.
 <p class="tip"><strong>Read your data</strong>: When working with new data, one great first move, among more we'll learn later, is to read the data by logging it to the web browser console. In Observable notebooks, we can simply output the variable of choice interactively to the page by placing it alone in a js codeblock like above.</p>
 <p class="tip"><strong>Isolate interested parts of data</strong>: If dates are important to the inquiry, remember that the dates are stored as Strings in the following format: <code>"10/24/2024"</code>, i.e.,<code>"mm/dd/YYYY"</code>.</p>
 
-<!-- E1 -->
-```javascript
-// Convert and code here
+```js
+let parseDate = d3.utcParse("%m/%d/%Y")
+let ballotsWithDateObjs = nc2024SampleVoters.map((voter) => {
+  return {
+    ...voter,
+    ballot_req_dt_obj: parseDate(voter.ballot_req_dt)
+  }
+})
 ```
 
-```javascript
-// Convert and output
+```js
 ballotsWithDateObjs
 ```
 
@@ -384,13 +388,18 @@ ballotsWithDateObjs
 
 **Goal**: Use `.map()` to loop through the updated array of objects, `ballotsWithDateObjs`, and create a new array of objects called `updatedBallots`. In the new `updatedBallots`, use `d3.utcFormat()` to assign a converted and formatted version of `ballot_req_dt_obj` with the following date ***format***: Wed., January 27, 1981.
 
-<!-- E2 -->
-```javascript
-// Convert and code here
+
+```js
+let formatDate = d3.utcFormat("%a., %B %d, %Y")
+let updatedBallots = ballotsWithDateObjs.map((voter) => {
+  return {
+    ...voter,
+    ballot_req_dt_formatted: formatDate(voter.ballot_req_dt_obj)
+  }
+})
 ```
 
-```javascript
-// Convert and output updatedBallots here
+```js
 updatedBallots
 ```
 
