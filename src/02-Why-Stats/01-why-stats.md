@@ -43,15 +43,16 @@ With these goals for the texts in mind, please respond to the questions herein a
 
 **Question**: Use the space below to define the provided key terms.
 
-- According to the SFSJ authors, what are the main difference between **data** and **information**?:
-- **Variable**:
-- **Constant**:
-- **Conceptualization**:
-- **Operationalization**:
-- **Nominal level of data**:
-- **Ordinal level of data**:
-- **Interval level of data**:
-- **Ratio level of data**:
+- According to the SFSJ authors, what are the main difference between **data** and **information**?: Data refers to the results of the measruements, while the results of analysis and interpretation is considered the information.
+- **Variable**: A characteristic that varies, like race, income, gender, etc.
+- **Constant**: A characteristic that is the same for people or objects that are the focus of the research.
+- **Conceptualization**: Refers to the process used in choosing and clearly defining the variables.
+- **Operationalization**: Rfers to the method use to measure the variable.
+- **Nominal level of data**: Involves classifing observations into mutually exclusive categories, with no inherent order or rank.
+- **Ordinal level of data**: used when classifying observations that are mutually exclusive and have an inherent order to them.
+
+- **Interval level of data**: Involves classifying observations that are mutually exclusive, have an inherent order and have an equal spacing between categories.
+- **Ratio level of data**: Involves classifying observations that are mutually exclusive, have an inherent order, have equal spacing and reflect the absolute magnitude.
 
 ### 1.2. On positivism
 
