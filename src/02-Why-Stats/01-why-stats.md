@@ -52,19 +52,19 @@ With these goals for the texts in mind, please respond to the questions herein a
 - **Ordinal level of data**: used when classifying observations that are mutually exclusive and have an inherent order to them.
 
 - **Interval level of data**: Involves classifying observations that are mutually exclusive, have an inherent order and have an equal spacing between categories.
-- **Ratio level of data**: Involves classifying observations that are mutually exclusive, have an inherent order, have equal spacing and reflect the absolute magnitude.
+- **Ratio level of data**: Involves classifying observations that are mutually exclusive, have an inherent order, have equal spacing and reflect the absolute magnitude. 
 
 ### 1.2. On positivism
 
 **Question**: Describe how the S4SJ authors define and use the term **positivism**. How do they suggest it is different from **post-positivism**? According to the authors, why are both paradigms important to social workers? Now, how do you imagine it is important for TPC professionals?
 
-Your_response_here
+The authors define positivism as the paradigm all about evidence based practice and empiricism. It's this kind of unmovable faith in information. Post positivism is more alternative and is interpretive. I personally see it as quantitative vs. qualitative ways of approaching a social work issue.
 
 ### 1.3. On the "*structural perspective*"
 
 **Question**: Name and define the different parts of the ***structural perspective***. Be sure to cover the parts related practice and research.
 
-Your_response_here
+Structuralist perspective is a viewpoint that sees problems being rooted in a structure, whether that be social, emotional, or political. This means being able to analyze the point of a problem and being able to draw out related concepts, researching how this can affect a person or people within a community.
 
 ## 2. Questions about "The history of empiricism"
 
@@ -72,7 +72,7 @@ Your_response_here
 
 **Question**: According to the SFSJ authors, what is ***feminist empiricism***? And, what issues does it recognize as important to recognize and remedy? Be sure to discuss why it emphasizes the importance of critically reflecting on aspects of the ***context*** of empirical work.
 
-Your_response_here
+Feminist empiricism is an approach to traditional empiricism that includes utilizing knowledge of feminism and applying that to research. It means seeing research and the scientific method without bias, knowing that science is traditionally male centered, and that traditional science is individualistic.
 
 ## 3. Questions About "The future of ethics and social justice" in TPC
 
@@ -80,17 +80,17 @@ Your_response_here
 
 **Question**: Name and define some of what you deem as the main different parts of the ***socially just ethic***. Be sure to discuss how it is different from other ethical approaches.
 
-Your_response_here
+Socially just ethics focus on the context of social values rather than looking at individual behavior. It is different because just like structuralized perspectives, it looks to center groups who are in the most need.
 
 ### 3.2. Defining critical issues
 
 **Question**: Briefly define each of the critical issues discussed: Cultural Imperialism, Marginalization, and Intersectional Oppression.
 
-**Cultural Imperialism**: Your_response_here
+**Cultural Imperialism**: The violent stealing of land and resources of colonizers to dominate and assimilate.
 
-**Marginalization**: Your_response_here
+**Marginalization**: Excluding specific groups from meaningful participation in society.
 
-**Intersectional Oppression**: Your_response_here
+**Intersectional Oppression**: Viewing how different forms of oppression interact, such as racism AND sexism coming together.
 
 ### 3.3. Defining the 3Ps to help us recognize oppression
 
