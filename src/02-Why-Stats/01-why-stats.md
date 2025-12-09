@@ -96,17 +96,17 @@ Socially just ethics focus on the context of social values rather than looking a
 
 **Question**: Define each of the 3Ps below. Explain how each helps us recognize oppression.
 
-**Power**: Your_response_here
+**Power**: Power is all about concern for the structure of things, it helps recognize oppression when we see what is normal or what is oppressive.
 
-**Privilege**: Your_response_here
+**Privilege**: Privilege works in tandem with positionality, it focuses on how people can bypass certain struggles and constraints due to identity.
 
-**Positionality**: Your_response_here
+**Positionality**: This is a reflection of an individual and where they are in terms of gender, race, sexuality, etc. This helps recognize different systems of oppression that may affect said individual.
 
 ### 3.4. Why an SJ ethic?
 
 **Question**: Why do Lindgren, Gerdes, and Lawrence position a "SJ ethic" as essential to the future of TPC? What types of problems does it help TPC tackle?
 
-Your_response_here
+Utilizing an SJ ethic as essential to the future of TPC helps move away from individual behavior and advocates for a collective action or movement in order to tackle bigger problems that are systemic. These problems can include imperialistic harm, colonialism, the Indigenous Data Sovereignty was mentioned specifically.
 
 ## 4. Questions About "Statistical Genre Analysis" (SGA)
 
@@ -114,30 +114,30 @@ Your_response_here
 
 **Question**: How do Graham et al define and discuss what constitutes "big" data? How does their definition differ from what you have heard before you read this article?
 
-Your_response_here
+Graham et al defines big data as field dependent and often all about capacity > quantity. I honestly didn't have a definition of "big" data other than it was scary to me before reading this article.
 
 ### 4.2. On SGA
 
 **Question**: Summarize the following parts of SGA:
 
-1. What TPC problems SGA addresses,
+1. What TPC problems SGA addresses
 2. What data they used to demonstrate its potential,
 3. What questions SGA data and methods enable TPC to ask, and
 4. What methods it uses to do so.
 
-Your_response_here
+TPC addresses the field's limited methods, looking more at prototypes and failing to handle huge datasets. They used FDA Drug approval meetings, and TPC was able to ask questions like how demographics influence an outcome. The methods used were qualitative coding and inferential statistics. 
 
 ## 5. "Science is a social endeavor."
 
 **Question**: Discuss what this statement means to you. Then, discuss any connections, confusion, and/or questions that you recognize with a SJ ethic and structural perspective?
 
-Your_response_here
+To me, this statement means that science cannot be separated from social studies, instead they intertwine. I recognize that utilizing SJ ethic can be effective, even if we are looking at hard data, we can ask things from a journalistic way, figuring out how social and political spheres are included in the conversation for information. 
 
 ## 6. Translating the structural approach into TPC / Other Humanities Fields
 
 **Question**: After considering all of these texts -- their exigencies, propositions, and methods -- translate Mullaly's broader definition of the *structural approach* and Moreau's *practice methods* in social work into the domain of TPC or humanist domain of work by putting them into conversation with Lindgren, Gerdes, and Lawrence's SJ ethic and Graham et al's statistical genre analysis. In other words, begin to develop your own structural perspective and set of practices that translates Moreau's 5 practices. Finally, add one new practice approach specific to TPC/your domain.
 
-Your_response_here
+My structural perspective on data manifests away from TPC, but more into journalism and how it serves utilizing information as a public service. Defense of the client and collectivization for example help identify what issues are happening and who is struggling, as well as the resources available for those "clients" to use against oppressive systems. Materialization to me translates into connecting with personal material deprivations, and pointing problems towards systemic issues and accountability within structures. Increasing and enhancing client power to me looks like empowerment of the people through information access and mass communication on important events. One new practice could be skepticism on information, asking questions, and then working to prepare information for mass audiences.
 
 ## Submission
 
